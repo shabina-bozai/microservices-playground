@@ -21,7 +21,7 @@ Each protocol has a `simple/` example to learn the concept and a `real-world/` e
 
 | Layer | Technology |
 |---|---|
-| Backend | Java 17, Spring Boot 3.2 |
+| Backend | Java 21, Spring Boot 3.3 |
 | Frontend | React 18 |
 | Build | Maven (server), npm (client) |
 
@@ -51,7 +51,7 @@ microservices-playground/
 
 ## Prerequisites
 
-- Java 17+
+- Java 21+
 - Maven 3.6+
 - Node.js 18+
 

@@ -8,7 +8,7 @@ A real-time chat application built with **Spring Boot** (backend) and **React** 
 
 | Layer | Technology |
 |---|---|
-| Backend | Java 17, Spring Boot 3.2, Spring WebSocket |
+| Backend | Java 21, Spring Boot 3.3, Spring WebSocket |
 | Frontend | React 18, @stomp/stompjs, SockJS |
 | Protocol | WebSocket + STOMP over SockJS |
 
@@ -68,7 +68,7 @@ React re-renders the chat
 
 ### Prerequisites
 
-- Java 17+
+- Java 21+
 - Maven 3.6+
 - Node.js 18+
 
