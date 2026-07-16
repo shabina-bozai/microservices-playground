@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #2d6a4f;
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.app-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.app-header p {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.panel-header h2 {
+  font-size: 1.25rem;
+  color: #2d6a4f;
+}
+
+.btn {
+  background: #e8f5e9;
+  color: #2d6a4f;
+  border: 1px solid #a5d6a7;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #c8e6c9;
+}
+
+.btn-primary {
+  background: #2d6a4f;
+  color: white;
+  border-color: #2d6a4f;
+}
+
+.btn-primary:hover {
+  background: #1b4332;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f9fbe7;
+  border-radius: 6px;
+  border: 1px solid #dcedc8;
+}
+
+.input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: #2d6a4f;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  background: #f8fffe;
+  border-radius: 6px;
+  border: 1px solid #e0f2f1;
+}
+
+.item-title {
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.item-sub {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.status {
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.status.error {
+  color: #dc2626;
+}

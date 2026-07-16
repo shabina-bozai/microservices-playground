@@ -1,0 +1,39 @@
+type Query {
+    feed(page: Int = 0, size: Int = 5): FeedPage!
+    post(id: ID!): Post
+}
+
+type Mutation {
+    createPost(content: String!, authorId: ID!): Post!
+    addComment(postId: ID!, content: String!, authorId: ID!): Comment!
+    likePost(postId: ID!): Post!
+}
+
+type FeedPage {
+    posts: [Post!]!
+    page: Int!
+    size: Int!
+    hasMore: Boolean!
+}
+
+type Post {
+    id: ID!
+    content: String!
+    author: User!
+    comments: [Comment!]!
+    likesCount: Int!
+    createdAt: String!
+}
+
+type Comment {
+    id: ID!
+    content: String!
+    author: User!
+    createdAt: String!
+}
+
+type User {
+    id: ID!
+    username: String!
+    avatarUrl: String!
+}
